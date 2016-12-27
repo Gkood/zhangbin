@@ -15,69 +15,59 @@
 		<script type="text/javascript" src="/zhangbin/depend/jquery.min.js"></script>
 		<script type="text/javascript" src="/zhangbin/depend/c.js"></script>
 		<script type="text/javascript" src="/zhangbin/depend/r.js"></script>
+		<script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=4E87D9A9b894b16261fda8e9487494f5&s=1"></script>
 		<script>
 			requirejs(['index/index']);
 		</script>
 	</head>
 
 	<body>
-		<header class="mui-bar mui-bar-nav">
-			<h1 class="mui-title">主页</h1>
-		</header>
 		<div class="mui-content">
-			<ul class="mui-table-view mui-grid-view mui-grid-9">
-				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-					<a href="#">
-						<span class="mui-icon mui-icon-home"></span>
-						<div class="mui-media-body">Home</div>
-					</a>
-				</li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-					<a href="#">
-						<span class="mui-icon mui-icon-email"><span class="mui-badge">5</span></span>
-						<div class="mui-media-body">Email</div>
-					</a>
-				</li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-					<a href="#">
-						<span class="mui-icon mui-icon-chatbubble"></span>
-						<div class="mui-media-body">Chat</div>
-					</a>
-				</li>
+			<ul class="mui-table-view mui-grid-view mui-grid-9" id="location">
 				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 					<a href="#">
 						<span class="mui-icon mui-icon-location"></span>
-						<div class="mui-media-body">location</div>
+						<div class="mui-media-body"><label class="cityName"></label></div>
 					</a>
 				</li>
 				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 					<a href="#">
 						<span class="mui-icon mui-icon-search"></span>
-						<div class="mui-media-body">Search</div>
+						<div class="mui-media-body">搜索</div>
 					</a>
 				</li>
+			</ul>
+			<ul class="mui-table-view mui-grid-view mui-grid-9 mt15" id="MUI">
 				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<a href="#">
+						<span class="mui-icon"><img src="img/logo.png" width="40" /></span>
+						<div class="mui-media-body">MUI框架</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view mui-grid-view mui-grid-9 mt15">
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" id="chat">
+					<a href="#">
+						<span class="mui-icon mui-icon-chatbubble"></span>
+						<div class="mui-media-body">与我聊天</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" id="iPhone">
 					<a href="#">
 						<span class="mui-icon mui-icon-phone"></span>
-						<div class="mui-media-body">Phone</div>
+						<div class="mui-media-body">唠叨我吧</div>
 					</a>
 				</li>
 				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 					<a href="#">
-						<span class="mui-icon mui-icon-gear"></span>
-						<div class="mui-media-body">Setting</div>
+						<span class="mui-icon mui-icon-person"></span>
+						<div class="mui-media-body">我的朋友</div>
 					</a>
 				</li>
 				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 					<a href="#">
 						<span class="mui-icon mui-icon-info"></span>
-						<div class="mui-media-body">about</div>
-					</a>
-				</li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-					<a href="#">
-						<span class="mui-icon mui-icon-more"></span>
-						<div class="mui-media-body">more</div>
+						<div class="mui-media-body">关于我</div>
 					</a>
 				</li>
 			</ul>
