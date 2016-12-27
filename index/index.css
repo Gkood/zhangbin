@@ -1,3 +1,12 @@
+html,
+body {
+  min-height: 100%;
+}
+.webg {
+  background: url(../img/webg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 .mui-icon-extra {
   font-size: 1.8em;
 }
@@ -11,8 +20,7 @@
   opacity: 0;
 }
 .ercodebox {
-  padding: 5px;
-  border: 1px solid #DDDDDD;
+  padding: 20px;
   display: inline-block;
   border-radius: 4px;
   background-color: #FFFFFF;
@@ -26,6 +34,7 @@
   display: block;
   font-size: 12px;
   text-align: center;
+  margin-top: 10px;
 }
 .mui-preview-image.mui-fullscreen {
   position: fixed;
