@@ -16,6 +16,10 @@ body {
   -webkit-text-size-adjust: 100%;
   color: #333333 !important;
 }
+body {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
 .mui-popup {
   top: 45% !important;
 }
@@ -39,4 +43,7 @@ body {
 }
 .ft20 {
   font-size: 20px !important;
+}
+.mui-grid-view.mui-grid-9 .mui-media .mui-icon {
+  font-size: 1.8em !important;
 }
