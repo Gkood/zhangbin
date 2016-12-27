@@ -38,7 +38,7 @@ define([
 								<div class="ercode" id="ercode"></div>\
 								<label>暂支持移动端，微信扫一扫</label>\
 							</div>';
-			$("body").append(codehtml);
+			$("body").append(codehtml).addClass("webg");
 			$("#ercode").qrcode({
 				width: 200,
 				height: 200,
