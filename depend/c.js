@@ -63,3 +63,9 @@ mui.init({
 		release: false //默认为false，不监听
 	}
 });
+
+function bodyload() {
+	$("body").animate({
+		opacity: 1
+	}, 500);
+}
