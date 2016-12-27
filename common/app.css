@@ -23,6 +23,9 @@ body {
 .mui-popup {
   top: 45% !important;
 }
+.mui-popup-button:active {
+  background-color: #DDDDDD !important;
+}
 .ft8 {
   font-size: 8px !important;
 }
