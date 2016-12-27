@@ -15,9 +15,13 @@ define([
 		mui.previewImage();
 		erCode()
 		baiMap();
+		Search();
 		movie()
 		Chat();
 		iPhone();
+		myFriend();
+		LOL();
+		aboutMe();
 		support();
 		Link();
 	}
@@ -61,6 +65,13 @@ define([
 		var myCity = new BMap.LocalCity();
 		myCity.get(myFun);
 	}
+	
+	//搜索
+	function Search(){
+		$("#search").off("tap").on("tap", function() {
+			mui.alert("正在开发中,敬请期待", '提示', function() {});
+		})
+	}
 
 	//娱票儿
 	function movie() {
@@ -88,6 +99,27 @@ define([
 	function iPhone() {
 		$("#iPhone").off("tap").on("tap", function() {
 			window.location.href = "tel:15757181154";
+		})
+	}
+	
+	//我的朋友
+	function myFriend(){
+		$("#myFriend").off("tap").on("tap", function() {
+			mui.alert("正在开发中,敬请期待", '提示', function() {});
+		})
+	}
+	
+	//LOL
+	function LOL(){
+		$("#LOL").off("tap").on("tap", function() {
+			mui.alert("正在开发中,敬请期待", '提示', function() {});
+		})
+	}
+	
+	//关于我
+	function aboutMe(){
+		$("#aboutMe").off("tap").on("tap", function() {
+			mui.alert("正在开发中,敬请期待", '提示', function() {});
 		})
 	}
 
