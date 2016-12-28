@@ -10,7 +10,7 @@ body {
 .mui-icon-extra {
   font-size: 1.8em;
 }
-.supportImg {
+.supportImg1 {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -18,6 +18,17 @@ body {
   left: 0;
   filter: alpha(opacity=0);
   opacity: 0;
+  z-index: 10;
+}
+.supportImg2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  z-index: 9;
 }
 .ercodebox {
   padding: 20px;
@@ -108,6 +119,7 @@ body {
   -webkit-backface-visibility: hidden;
 }
 .mui-zoom {
+  width: 98% !important;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
