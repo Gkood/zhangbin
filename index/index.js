@@ -6,6 +6,7 @@ define([
 	'zoom',
 	'qrcode',
 	'previewimage',
+	'zzsc',
 	'index/index.tpl',
 	'css!index/index.css'
 ], function($, template, proxy, layer) {
