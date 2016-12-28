@@ -15,6 +15,7 @@ require.config({
 		'base64': 'modul/base64/base64',
 		'zoom': 'modul/previewimage/mui.zoom',
 		'previewimage': 'modul/previewimage/mui.previewimage',
-		'qrcode': 'modul/qrcode/jquery.qrcode.min'
+		'qrcode': 'modul/qrcode/jquery.qrcode.min',
+		'snippet': 'modul/snippet/jquery.snippet'
 	}
 });
