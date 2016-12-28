@@ -64,8 +64,41 @@ mui.init({
 	}
 });
 
+//加载渐变
 function bodyload() {
 	$("body").animate({
 		opacity: 1
 	}, 500);
+}
+
+//获取手机型号
+function getPhoneType() {
+
+	//正则,忽略大小写
+	var pattern_phone = new RegExp("iPhone", "i");
+	var pattern_android = new RegExp("android", "i");
+	var userAgent = navigator.userAgent.toLowerCase();
+	var isAndroid = pattern_android.test(userAgent);
+	var isIphone = pattern_phone.test(userAgent);
+	var phoneType = "phoneType";
+	if(isAndroid) {
+		phoneType = "一般用安卓手机的人都比较牛逼";
+	} else if(isIphone) {
+		//6   w=375    6plus w=414   5s w=320     5 w=320
+		var wigth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+		if(wigth > 400) {
+			phoneType = "一般用 iPhone6 Plus 的人都比较牛逼";
+		} else if(wigth > 370) {
+			phoneType = "一般用 iPhone 6 的人都比较牛逼";
+		} else if(wigth > 315) {
+			phoneType = "一般用 iPhone 5 的人都比较牛逼";
+		} else {
+			phoneType = "一般用 iPhone 4s 的人都比较牛逼";
+		}
+
+	} else {
+		phoneType = "您的设备太先进了,好牛逼";
+	}
+
+	return phoneType;
 }
