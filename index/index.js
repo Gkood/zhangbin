@@ -13,10 +13,10 @@ define([
 	//初始化
 	function init() {
 		mui.previewImage();
-		erCode()
+		erCode();
 		baiMap();
-		Search();
-		movie()
+		progress();
+		iPhoneModel()
 		Chat();
 		iPhone();
 		myFriend();
@@ -66,26 +66,16 @@ define([
 		myCity.get(myFun);
 	}
 	
-	//搜索
-	function Search(){
-		$("#search").off("tap").on("tap", function() {
-			mui.alert("正在开发中,敬请期待", '提示', function() {});
+	//进度
+	function progress(){
+		$("#progress").off("tap").on("tap", function() {
+			mui.alert("还有好多没开发~~~", ' ', function() {});
 		})
 	}
-
-	//娱票儿
-	function movie() {
-		$("#Wpe1").off("tap").on("tap", function() {
-			window.location.href = "http://wx.wepiao.com";
-		})
-
-		$("#Wpe2").off("tap").on("tap", function() {
-			window.location.href = "//wechat.show.wepiao.com/";
-		})
-
-		$("#Wpe3").off("tap").on("tap", function() {
-			window.location.href = "https://sports.wepiao.com/wechat/?referrer=show";
-		})
+	
+	//型号
+	function iPhoneModel(){
+		$("#iPhoneModel").text(getPhoneType());
 	}
 
 	//聊天
@@ -137,6 +127,13 @@ define([
 			mui.openWindow({
 				url: 'http://www.dcloud.io/hellomui/',
 				id: 'hellomui'
+			});
+		})
+		//MUImind
+		$("#MUImind").off("tap").on("tap", function() {
+			mui.openWindow({
+				url: '/zhangbin/mind/mind.html',
+				id: 'mind'
 			});
 		})
 	}
