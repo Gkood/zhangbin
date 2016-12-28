@@ -16,6 +16,7 @@ require.config({
 		'zoom': 'modul/previewimage/mui.zoom',
 		'previewimage': 'modul/previewimage/mui.previewimage',
 		'qrcode': 'modul/qrcode/jquery.qrcode.min',
-		'snippet': 'modul/snippet/jquery.snippet'
+		'snippet': 'modul/snippet/jquery.snippet',
+		'zzsc': 'modul/zzsc/zzsc'
 	}
 });
