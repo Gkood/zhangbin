@@ -47,6 +47,13 @@ body {
   text-align: center;
   margin-top: 10px;
 }
+#zzsc {
+  width: 100%;
+}
+#zzsc #canvas {
+  width: 100% !important;
+  display: inline-block;
+}
 .mui-preview-image.mui-fullscreen {
   position: fixed;
   z-index: 20;
@@ -119,7 +126,6 @@ body {
   -webkit-backface-visibility: hidden;
 }
 .mui-zoom {
-  width: 98% !important;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
