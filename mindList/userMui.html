@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>张斌Gkood</title>
+		<link rel="stylesheet" href="/zhangbin/common/mui.min.css" />
+		<link rel="stylesheet" href="/zhangbin/common/base.css" />
+		<link rel="stylesheet" href="/zhangbin/common/app.css" />
+		<script type="text/javascript" src="/zhangbin/depend/requirejs/require.js"></script>
+		<script type="text/javascript" src="/zhangbin/depend/mui.min.js"></script>
+		<script type="text/javascript" src="/zhangbin/depend/jquery.min.js"></script>
+		<script type="text/javascript" src="/zhangbin/depend/c.js"></script>
+		<script type="text/javascript" src="/zhangbin/depend/r.js"></script>
+		<script>
+			requirejs(['mindList/userMui']);
+		</script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">开始使用MUI</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-card">
+				<div class="mui-card-header">建议使用编辑器</div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						HBuilder,集成了MUI框架。
+					</div>
+				</div>
+			</div>
+			<div class="mui-card">
+				<div class="mui-card-header">基本引用</div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						mui.min.css<br />
+						app.css（自定义共用样式）<br />
+						mui.min.js<br />
+						app.js(自定义共用js)
+					</div>
+				</div>
+			</div>
+			<div class="mui-card">
+				<div class="mui-card-header">依赖jQuery的引用</div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						mui.min.css<br />
+						app.css（自定义共用样式）<br />
+						mui.min.js<br />
+						jquery.min.js<br />
+						app.js（自定义共用js）
+					</div>
+				</div>
+			</div>
+			<div class="mui-card">
+				<div class="mui-card-header">基本HTML</div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<label>导航栏：</label>
+						<div>
+							&lt;header class="mui-bar mui-bar-nav"&gt;<br />
+							&nbsp;&nbsp;&lt;h1 class="mui-title">开始使用MUI&lt;/h1&gt;<br />
+							&lt;/header&gt;
+						</div><br />
+						<label>主体内容：</label>
+						<div>&lt;div class="mui-content"&gt;&lt;/div&gt;</div>
+					</div>
+				</div>
+			</div>
+			<div class="mui-card">
+				<div class="mui-card-header">基本JS初始化</div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<pre class="js">mui.init();</pre>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
