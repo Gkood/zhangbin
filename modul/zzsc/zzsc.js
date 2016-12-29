@@ -1,7 +1,7 @@
 $(function(){
 $('#zzsc').html('<canvas id="canvas"></canvas>');
 var WINDOW_WIDTH = 920;
-		var WINDOW_HEIGHT = WINDOW_WIDTH;
+		var WINDOW_HEIGHT = 700;
 		var RADIUS = 8; //球半径
 		var NUMBER_GAP = 10; //数字之间的间隙
 		var u=0.65; //碰撞能量损耗系数
