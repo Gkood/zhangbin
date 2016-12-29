@@ -3,7 +3,7 @@ body {
   min-height: 100%;
 }
 .webg {
-  background: url(../img/webg.jpg) no-repeat;
+  background: url("../img/webg.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -47,12 +47,18 @@ body {
   text-align: center;
   margin-top: 10px;
 }
-#zzsc {
+#time > a:not(.mui-btn) {
+  padding: inherit !important;
+}
+#time #zzsc {
   width: 100%;
 }
-#zzsc #canvas {
+#time #zzsc #canvas {
   width: 100% !important;
   display: inline-block;
+}
+#time.mui-active {
+  background-color: #f2f2f2 !important;
 }
 .mui-preview-image.mui-fullscreen {
   position: fixed;
